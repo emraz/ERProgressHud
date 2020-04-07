@@ -2,7 +2,7 @@
 *Made with love and passion*
 
 ## Introduction
-* A simple Progresshud written in Swift, compitable with Swift 5.0
+* A simple Progresshud written in Swift, compatible with Swift 5.0
 * Five different kinds of ProgressHud is implemented to use.
 * Easy to customize.
 * ProgressHud With various options.
