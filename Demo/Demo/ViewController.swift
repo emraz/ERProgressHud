@@ -12,13 +12,47 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-    @IBAction func showProgressHud(_ sender: Any) {
-        ERProgressHud.show()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1)) {
-            ERProgressHud.hide()
+    @IBAction func showProgressHud(withDarkBGNoTitle sender: Any) {
+        ERProgressHud.sharedInstance.show()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
+            ERProgressHud.sharedInstance.hide()
+        }
+    }
+
+    @IBAction func showProgressHud(withBlurBGNoTitle sender: Any) {
+        ERProgressHud.sharedInstance.showWithBlurView()
+
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
+            ERProgressHud.sharedInstance.hide()
+        }
+    }
+    
+    @IBAction func showProgressHud(withTitleNoBG sender: Any) {
+
+        ERProgressHud.sharedInstance.show(withTitle: "Loading...")
+
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
+            ERProgressHud.sharedInstance.hide()
+        }
+    }
+
+    @IBAction func showProgressHud(withTitleandBlurBG sender: Any) {
+
+        ERProgressHud.sharedInstance.showBlurView(withTitle: "Loading...")
+
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
+            ERProgressHud.sharedInstance.hide()
+        }
+    }
+    
+    @IBAction func showProgressHud(withTitleandDarkBG sender: Any) {
+
+        ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "Loading...")
+
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
+            ERProgressHud.sharedInstance.hide()
         }
     }
 }
