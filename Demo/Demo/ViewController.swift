@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var subView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     @IBAction func showProgressHud(withDarkBGNoTitle sender: Any) {
         ERProgressHud.sharedInstance.show()
+
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
             ERProgressHud.sharedInstance.hide()
         }
@@ -51,6 +53,14 @@ class ViewController: UIViewController {
 
         ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "Loading...")
 
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
+            ERProgressHud.sharedInstance.hide()
+        }
+    }
+    
+    @IBAction func showProgressHudToView(withDarkBGNoTitle sender: Any) {
+        ERProgressHud.sharedInstance.show(view: subView)
+        
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
             ERProgressHud.sharedInstance.hide()
         }

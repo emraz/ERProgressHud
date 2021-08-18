@@ -46,7 +46,8 @@ class ERProgressHud {
     }
     
     func show() -> Void {
-        
+        container.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
+
         container.backgroundColor = UIColor.black.withAlphaComponent(0.85)
         activityIndicatorView.style = UIActivityIndicatorView.Style.large
         activityIndicatorView.center = CGPoint(x: SCREEN_WIDTH / 2, y: SCREEN_HEIGHT / 2)
@@ -63,8 +64,30 @@ class ERProgressHud {
         })
     }
     
+    func show(view: UIView) -> Void {
+        
+        container.frame = view.bounds
+        
+        container.backgroundColor = UIColor.black.withAlphaComponent(0.85)
+        activityIndicatorView.style = UIActivityIndicatorView.Style.large
+        activityIndicatorView.center = CGPoint(x: view.bounds.width / 2, y: view.bounds.height / 2)
+        activityIndicatorView.color = UIColor.white
+        
+        activityIndicatorView.startAnimating()
+        container.addSubview(activityIndicatorView)
+        view.addSubview(container)
+       
+        container.alpha = 0.0
+        UIView.animate(withDuration: 0.5, animations: {
+            self.container.alpha = 1.0
+        })
+    }
+    
+    
     func showWithBlurView() {
         
+        container.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
+
         //only apply the blur if the user hasn't disabled transparency effects
         if !UIAccessibility.isReduceTransparencyEnabled {
             container.backgroundColor = UIColor.clear
@@ -105,6 +128,8 @@ class ERProgressHud {
     
     func show(withTitle title: String?) {
         
+        container.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
+        
         container.backgroundColor = UIColor.clear
         
         subContainer.backgroundColor = UIColor.systemGroupedBackground
@@ -134,6 +159,8 @@ class ERProgressHud {
     
     func showDarkBackgroundView(withTitle title: String?) {
         
+        container.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
+        
         container.backgroundColor = UIColor.black.withAlphaComponent(0.85)
         
         subContainer.backgroundColor = UIColor.systemGroupedBackground
@@ -162,6 +189,8 @@ class ERProgressHud {
     }
     
     func showBlurView(withTitle title: String?) {
+        
+        container.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
         
         //only apply the blur if the user hasn't disabled transparency effects
         if !UIAccessibility.isReduceTransparencyEnabled {

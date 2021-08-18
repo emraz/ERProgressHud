@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Q3-0r-uWF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Q3-0r-uWF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,8 +20,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="5yu-wR-LtB">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obP-jH-VTx">
-                                <rect key="frame" x="40" y="660" width="334" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obP-jH-VTx">
+                                <rect key="frame" x="98.5" y="144" width="217" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Dark Background without Title">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,8 +30,8 @@
                                     <action selector="showProgressHudWithDarkBGNoTitle:" destination="3Q3-0r-uWF" eventType="touchUpInside" id="rRE-Fn-5WE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIi-VL-9bc">
-                                <rect key="frame" x="40" y="698" width="334" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIi-VL-9bc">
+                                <rect key="frame" x="101" y="182" width="212" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Blur Background without Title">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,8 +40,8 @@
                                     <action selector="showProgressHudWithBlurBGNoTitle:" destination="3Q3-0r-uWF" eventType="touchUpInside" id="W7t-CW-jmu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oei-mw-kp1">
-                                <rect key="frame" x="40" y="736" width="334" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oei-mw-kp1">
+                                <rect key="frame" x="84" y="220" width="246" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Transparent Background with Title">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,8 +50,8 @@
                                     <action selector="showProgressHudWithTitleNoBG:" destination="3Q3-0r-uWF" eventType="touchUpInside" id="EAK-jd-kky"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4X3-K0-Bst">
-                                <rect key="frame" x="40" y="774" width="334" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4X3-K0-Bst">
+                                <rect key="frame" x="112.5" y="258" width="189" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Blur Background with Title">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -58,8 +60,8 @@
                                     <action selector="showProgressHudWithTitleandBlurBG:" destination="3Q3-0r-uWF" eventType="touchUpInside" id="aqU-Ix-IXM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Oe-yk-YpE">
-                                <rect key="frame" x="40" y="812" width="334" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Oe-yk-YpE">
+                                <rect key="frame" x="110" y="296" width="194" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Dark Background with Title">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,31 +70,51 @@
                                     <action selector="showProgressHudWithTitleandDarkBG:" destination="3Q3-0r-uWF" eventType="touchUpInside" id="Lfe-hM-49g"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vjw-tM-mKk">
+                                <rect key="frame" x="40" y="528" width="334" height="234"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vjw-tM-mKk" secondAttribute="height" multiplier="1:0.7" id="c3Y-Gf-TLM"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ7-K6-fBt">
+                                <rect key="frame" x="60.5" y="334" width="293" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Dark Background without Title(In a View)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showProgressHudToViewWithDarkBGNoTitle:" destination="3Q3-0r-uWF" eventType="touchUpInside" id="9OJ-0f-gF5"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="OZF-S6-oFm"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4X3-K0-Bst" firstAttribute="centerX" secondItem="prz-ua-BC7" secondAttribute="centerX" id="024-0r-nRW"/>
                             <constraint firstItem="5yu-wR-LtB" firstAttribute="leading" secondItem="OZF-S6-oFm" secondAttribute="leading" id="5Xq-HB-YVL"/>
-                            <constraint firstItem="0Oe-yk-YpE" firstAttribute="leading" secondItem="OZF-S6-oFm" secondAttribute="leading" constant="40" id="6aj-dp-CFY"/>
                             <constraint firstItem="5yu-wR-LtB" firstAttribute="trailing" secondItem="OZF-S6-oFm" secondAttribute="trailing" id="8TE-Nj-rbU"/>
                             <constraint firstItem="oei-mw-kp1" firstAttribute="top" secondItem="UIi-VL-9bc" secondAttribute="bottom" constant="8" id="BOD-aV-Qva"/>
-                            <constraint firstItem="OZF-S6-oFm" firstAttribute="trailing" secondItem="obP-jH-VTx" secondAttribute="trailing" constant="40" id="FGA-jE-uyT"/>
                             <constraint firstItem="0Oe-yk-YpE" firstAttribute="top" secondItem="4X3-K0-Bst" secondAttribute="bottom" constant="8" id="HCw-8N-fWR"/>
-                            <constraint firstItem="oei-mw-kp1" firstAttribute="leading" secondItem="OZF-S6-oFm" secondAttribute="leading" constant="40" id="HDD-0K-ZTG"/>
                             <constraint firstItem="UIi-VL-9bc" firstAttribute="top" secondItem="obP-jH-VTx" secondAttribute="bottom" constant="8" id="L34-lw-KN8"/>
-                            <constraint firstItem="OZF-S6-oFm" firstAttribute="trailing" secondItem="4X3-K0-Bst" secondAttribute="trailing" constant="40" id="Oml-mv-QZk"/>
+                            <constraint firstItem="OZF-S6-oFm" firstAttribute="bottom" secondItem="Vjw-tM-mKk" secondAttribute="bottom" multiplier="1:1" constant="100" id="MYL-Lb-vvt"/>
                             <constraint firstItem="5yu-wR-LtB" firstAttribute="top" secondItem="OZF-S6-oFm" secondAttribute="top" id="Q9R-66-Taz"/>
-                            <constraint firstItem="OZF-S6-oFm" firstAttribute="trailing" secondItem="0Oe-yk-YpE" secondAttribute="trailing" constant="40" id="R3x-AX-oXk"/>
-                            <constraint firstItem="obP-jH-VTx" firstAttribute="leading" secondItem="OZF-S6-oFm" secondAttribute="leading" constant="40" id="REr-ca-lGZ"/>
-                            <constraint firstItem="OZF-S6-oFm" firstAttribute="bottom" secondItem="0Oe-yk-YpE" secondAttribute="bottom" constant="20" id="V0p-YL-2cL"/>
-                            <constraint firstItem="4X3-K0-Bst" firstAttribute="leading" secondItem="OZF-S6-oFm" secondAttribute="leading" constant="40" id="aFL-ya-Wjs"/>
-                            <constraint firstItem="OZF-S6-oFm" firstAttribute="trailing" secondItem="oei-mw-kp1" secondAttribute="trailing" constant="40" id="h3r-Cd-uEn"/>
-                            <constraint firstItem="UIi-VL-9bc" firstAttribute="leading" secondItem="OZF-S6-oFm" secondAttribute="leading" constant="40" id="lOp-zd-D0S"/>
-                            <constraint firstItem="OZF-S6-oFm" firstAttribute="trailing" secondItem="UIi-VL-9bc" secondAttribute="trailing" constant="40" id="mLX-ZD-Tck"/>
+                            <constraint firstItem="LZ7-K6-fBt" firstAttribute="top" secondItem="0Oe-yk-YpE" secondAttribute="bottom" constant="8" symbolic="YES" id="Rda-8b-SLn"/>
+                            <constraint firstItem="0Oe-yk-YpE" firstAttribute="centerX" secondItem="prz-ua-BC7" secondAttribute="centerX" id="VqF-ug-XHI"/>
+                            <constraint firstItem="obP-jH-VTx" firstAttribute="centerX" secondItem="prz-ua-BC7" secondAttribute="centerX" id="YNA-jp-bPN"/>
+                            <constraint firstItem="OZF-S6-oFm" firstAttribute="trailing" secondItem="Vjw-tM-mKk" secondAttribute="trailing" constant="40" id="ekv-0U-T2o"/>
+                            <constraint firstItem="UIi-VL-9bc" firstAttribute="centerX" secondItem="prz-ua-BC7" secondAttribute="centerX" id="qcD-wU-C0l"/>
                             <constraint firstItem="OZF-S6-oFm" firstAttribute="bottom" secondItem="5yu-wR-LtB" secondAttribute="bottom" id="uVs-7a-p3f"/>
+                            <constraint firstItem="Vjw-tM-mKk" firstAttribute="leading" secondItem="OZF-S6-oFm" secondAttribute="leading" constant="40" id="ua2-SM-hgM"/>
+                            <constraint firstItem="LZ7-K6-fBt" firstAttribute="centerX" secondItem="prz-ua-BC7" secondAttribute="centerX" id="wgB-Vf-H80"/>
+                            <constraint firstItem="obP-jH-VTx" firstAttribute="top" secondItem="OZF-S6-oFm" secondAttribute="top" constant="100" id="xdJ-jG-scK"/>
+                            <constraint firstItem="oei-mw-kp1" firstAttribute="centerX" secondItem="prz-ua-BC7" secondAttribute="centerX" id="yUp-KX-5bM"/>
                             <constraint firstItem="4X3-K0-Bst" firstAttribute="top" secondItem="oei-mw-kp1" secondAttribute="bottom" constant="8" id="yky-vj-pUN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="OZF-S6-oFm"/>
                     </view>
+                    <connections>
+                        <outlet property="subView" destination="Vjw-tM-mKk" id="iZZ-jm-Lkt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mgq-1t-AfI" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,5 +123,8 @@
     </scenes>
     <resources>
         <image name="bg" width="576" height="1024"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
