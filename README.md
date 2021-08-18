@@ -56,6 +56,7 @@
         ```
         ERProgressHud.sharedInstance.updateProgressTitle("Show your progress here");
     ```
+    
 // Show Simple ProgressHud in a specific View without Title<br />
     ```
         ERProgressHud.sharedInstance.show(view: subView)
