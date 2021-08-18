@@ -56,6 +56,10 @@
         ```
         ERProgressHud.sharedInstance.updateProgressTitle("Show your progress here");
     ```
+// Show Simple ProgressHud in a specific View without Title<br />
+    ```
+        ERProgressHud.sharedInstance.show(view: subView)
+    ```
     
 ## License
 ERProgressHud is released under the MIT license. See LICENSE for details.
