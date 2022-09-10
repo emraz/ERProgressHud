@@ -137,7 +137,7 @@ class ERProgressHud {
         container.addSubview(subContainer)
         
         activityIndicatorView.style = UIActivityIndicatorView.Style.medium
-        activityIndicatorView.color = UIColor.black
+        activityIndicatorView.color = UIColor.darkGray
         activityIndicatorView.frame = CGRect(x: 0, y: 10, width: subContainer.bounds.width, height: subContainer.bounds.height / 3.0)
         activityIndicatorView.center = CGPoint(x: activityIndicatorView.center.x, y: activityIndicatorView.center.y)
         subContainer.addSubview(activityIndicatorView)
@@ -168,7 +168,7 @@ class ERProgressHud {
         container.addSubview(subContainer)
         
         activityIndicatorView.style = UIActivityIndicatorView.Style.medium
-        activityIndicatorView.color = UIColor.black
+        activityIndicatorView.color = UIColor.darkGray
         activityIndicatorView.frame = CGRect(x: 0, y: 10, width: subContainer.bounds.width, height: subContainer.bounds.height / 3.0)
         activityIndicatorView.center = CGPoint(x: activityIndicatorView.center.x, y: activityIndicatorView.center.y)
         subContainer.addSubview(activityIndicatorView)
@@ -201,7 +201,7 @@ class ERProgressHud {
         }
         
         subContainer.backgroundColor = UIColor.systemGroupedBackground
-        activityIndicatorView.color = UIColor.black
+        activityIndicatorView.color = UIColor.darkGray
         subContainer.center = CGPoint(x: SCREEN_WIDTH / 2, y: SCREEN_HEIGHT / 2)
         container.addSubview(subContainer)
         
